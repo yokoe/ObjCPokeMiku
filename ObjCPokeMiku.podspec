@@ -6,20 +6,18 @@
 #
 Pod::Spec.new do |s|
   s.name             = "ObjCPokeMiku"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of ObjCPokeMiku."
+  s.version          = "0.0.1"
+  s.summary          = "A Pocket Miku (NSX-39) helper library for Objective-C."
   s.description      = <<-DESC
-                       An optional longer description of ObjCPokeMiku
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       A Pocket Miku (NSX-39) helper library for Objective-C.
+                       Currently in BETA.
                        DESC
-  s.homepage         = "http://EXAMPLE/NAME"
-  s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "http://github.com/yokoe/ObjCPokeMiku"
+  # s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "sota" => "" }
-  s.source           = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/EXAMPLE'
+  s.source           = { :git => "https://github.com/yokoe/ObjCPokeMiku.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/croquette0212'
 
   # s.platform     = :ios, '5.0'
   # s.ios.deployment_target = '5.0'
@@ -27,11 +25,11 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Classes'
-  s.resources = 'Assets/*.png'
+  # s.resources = 'Assets/*.png'
 
   s.ios.exclude_files = 'Classes/osx'
   s.osx.exclude_files = 'Classes/ios'
   # s.public_header_files = 'Classes/**/*.h'
-  # s.frameworks = 'SomeFramework', 'AnotherFramework'
+  s.frameworks = 'CoreMIDI'
   # s.dependency 'JSONKit', '~> 1.4'
 end
