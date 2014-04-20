@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = "ObjCPokeMiku"
-  s.version          = "0.0.1"
+  s.version          = "0.0.2"
   s.summary          = "A Pocket Miku (NSX-39) helper library for Objective-C."
   s.description      = <<-DESC
                        A Pocket Miku (NSX-39) helper library for Objective-C.
