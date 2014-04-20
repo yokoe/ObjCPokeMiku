@@ -3,9 +3,26 @@
 [![Version](http://cocoapod-badges.herokuapp.com/v/ObjCPokeMiku/badge.png)](http://cocoadocs.org/docsets/ObjCPokeMiku)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/ObjCPokeMiku/badge.png)](http://cocoadocs.org/docsets/ObjCPokeMiku)
 
-## Usage
+## 使い方
 
-To run the example project; clone the repo, and run `pod install` from the Example directory first.
+CocoaPodsで配布しています。`pod install`でインストールしてください。
+
+    pod "ObjCPokeMiku"
+
+### Initialization
+
+```
+#import <objc-pokemiku/PMMiku.h>
+
+PMMiku *miku;
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+    miku = [[PMMiku alloc] init];
+}
+```
+
+Create an instance of PMMiku class first.
 
 ## Requirements
 
