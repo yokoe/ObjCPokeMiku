@@ -9,20 +9,30 @@ CocoaPodsで配布しています。`pod install`でインストールしてく�
 
     pod "ObjCPokeMiku"
 
-### Initialization
+### 初期化
 
 ```
-#import <objc-pokemiku/PMMiku.h>
+#import <ObjCPokeMiku/PMMiku.h>
+```
 
+`<ObjCPokeMiku/PMMiku.h>`をインポートしてください。
+
+```
 PMMiku *miku;
+```
 
+`NSX-39`の操作は`PMMiku`クラスを介して行います。
+`PMMiku`クラスは、操作のたびにインスタンスを作る形ではなく、アプリ起動中に一つのインスタンスを使い回すようにしてください。
+
+```
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     miku = [[PMMiku alloc] init];
 }
 ```
 
-Create an instance of PMMiku class first.
+`[[PMMiku alloc] init]`を呼ぶと、自動的にオンライン状態(起動中)の`NSX-39`を見つけて、接続し操作可能な状態にします。複数の`NSX-39`が接続されているときは、最初に見つかったデバイスを使います。(将来的には別個に操作できるように拡張されるかも)
+
 
 ## Requirements
 
