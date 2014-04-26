@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = "ObjCPokeMiku"
-  s.version          = "0.0.2"
+  s.version          = "0.0.3"
   s.summary          = "A Pocket Miku (NSX-39) helper library for Objective-C."
   s.description      = <<-DESC
                        A Pocket Miku (NSX-39) helper library for Objective-C.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Classes'
-  # s.resources = 'Assets/*.png'
+  s.resources = 'Assets/*'
 
   s.ios.exclude_files = 'Classes/osx'
   s.osx.exclude_files = 'Classes/ios'
