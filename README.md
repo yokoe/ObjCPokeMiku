@@ -66,7 +66,7 @@ it simply add the following line to your Podfile:
 
 ## Author
 
-sota, 
+[@croquette0212](http://twitter.com/croquette0212)
 
 ## License
 
