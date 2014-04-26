@@ -8,6 +8,14 @@
 CocoaPodsで配布しています。`pod install`でインストールしてください。
 
     pod "ObjCPokeMiku"
+    
+### 三行で
+
+```
+#import <ObjCPokeMiku/PMMiku.h>
+PMMiku *miku = [[PMMiku alloc] init];
+[miku noteOnWithKey:64 velocity:100 pronunciation:@"にょ"];
+```
 
 ### 初期化
 
@@ -33,6 +41,19 @@ PMMiku *miku;
 
 `[[PMMiku alloc] init]`を呼ぶと、自動的にオンライン状態(起動中)の`NSX-39`を見つけて、接続し操作可能な状態にします。複数の`NSX-39`が接続されているときは、最初に見つかったデバイスを使います。(将来的には別個に操作できるように拡張されるかも)
 
+### 音をならす
+
+オン
+
+```
+[miku noteOnWithKey:64 velocity:100 pronunciation:@"にょ"];
+```
+
+オフ
+
+```
+[miku noteOff];
+```
 
 ## Requirements
 
